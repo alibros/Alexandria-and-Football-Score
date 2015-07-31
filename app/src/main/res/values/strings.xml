@@ -28,4 +28,6 @@
 <!-- TODO: Remove or change this placeholder text -->
     <string name="about_text">This application gets book information from a Google API. All titles, cover images, and author information come from there.
     The original version of this app was built by Sascha Jaschke, and a modified version is given to students in the Udacity Android Nanodegree program. </string>
+    <string name="no_connection">It appears that your device has no internet connection right now. Please double check your network settings and try again.</string>
+    <string name="unknown_error">Oops! Something went wrong. Please double check your connection and try again.</string>
 </resources>
