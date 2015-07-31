@@ -2,8 +2,11 @@ package it.jaschke.alexandria.services;
 
 import android.app.IntentService;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
@@ -17,6 +20,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.InetAddress;
 import java.net.URL;
 
 import it.jaschke.alexandria.MainActivity;
@@ -71,6 +75,19 @@ public class BookService extends IntentService {
      * parameters.
      */
     private void fetchBook(String ean) {
+
+
+        /*
+         * Here we check for Internet Connection and if device is not connected will return this
+         * function here without proceeding to the URLConnection calls
+         */
+
+        if (!isInternetAvailable()){
+            Intent intent = new Intent(MainActivity.MESSAGE_EVENT);
+            intent.putExtra(MainActivity.MESSAGE_KEY, getResources().getString(R.string.no_connection));
+            LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
+        }
+
 
         if(ean.length()!=13){
             return;
@@ -130,7 +147,10 @@ public class BookService extends IntentService {
             bookJsonString = buffer.toString();
         } catch (Exception e) {
             Log.e(LOG_TAG, "Error ", e);
-        } finally {
+        }
+
+
+        finally {
             if (urlConnection != null) {
                 urlConnection.disconnect();
             }
@@ -198,6 +218,14 @@ public class BookService extends IntentService {
 
         } catch (JSONException e) {
             Log.e(LOG_TAG, "Error ", e);
+        } catch (NullPointerException e){
+            Log.e(LOG_TAG, "Error ", e);
+            /**
+             * Adding another check here in case for any other reason a NPE happens here
+             */
+            Intent intent = new Intent(MainActivity.MESSAGE_EVENT);
+            intent.putExtra(MainActivity.MESSAGE_KEY, getResources().getString(R.string.unknown_error));
+            LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(intent);
         }
     }
 
@@ -230,4 +258,26 @@ public class BookService extends IntentService {
             values= new ContentValues();
         }
     }
+
+
+    /*
+     * Function used to check internet connection
+     * Source: http://stackoverflow.com/questions/9570237/android-check-internet-connection
+     */
+    private boolean isInternetAvailable() {
+        try {
+            InetAddress ipAddr = InetAddress.getByName("google.com"); //You can replace it with your name
+
+            if (ipAddr.equals("")) {
+                return false;
+            } else {
+                return true;
+            }
+
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+
  }
