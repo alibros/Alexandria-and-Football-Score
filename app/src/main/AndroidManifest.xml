@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="barqsoft.footballscores" >
+    package="barqsoft.footballscores">
 
     <uses-permission
         android:name="android.permission.INTERNET"
@@ -29,12 +29,28 @@
         <activity
             android:name=".AboutActivity"
             android:label="About"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="barqsoft.footballscores.MainActivity" />
         </activity>
+
         <service android:name=".service.myFetchService" />
+
+        <receiver
+            android:name=".widget.ScoreWidgetProvider"
+            android:label="Scores">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="barqsoft.footballscores.ACTION_DATA_UPDATED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+
+        </receiver>
+        <service android:name=".widget.WidgetIntentService" />
+
     </application>
 
 </manifest>
