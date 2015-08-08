@@ -1,5 +1,8 @@
 package barqsoft.footballscores;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Created by yehya khaled on 3/3/2015.
  */
@@ -82,5 +85,13 @@ public class Utilies
             case "Stoke City FC" : return R.drawable.stoke_city;
             default: return R.drawable.no_icon;
         }
+    }
+
+
+    public static String getFormattedStringForTodayDate(){
+        Date todayDate = new Date(System.currentTimeMillis());
+        SimpleDateFormat mformat = new SimpleDateFormat("yyyy-MM-dd");
+        String today = mformat.format(todayDate);
+        return today;
     }
 }
