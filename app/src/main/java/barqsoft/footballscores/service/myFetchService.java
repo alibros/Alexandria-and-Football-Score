@@ -31,6 +31,7 @@ import barqsoft.footballscores.R;
 public class myFetchService extends IntentService
 {
     public static final String LOG_TAG = "myFetchService";
+    public static final String ACTION_DATA_UPDATED = "barqsoft.footballscores.ACTION_DATA_UPDATED";
     public myFetchService()
     {
         super("myFetchService");
@@ -124,13 +125,20 @@ public class myFetchService extends IntentService
 
                 processJSONdata(JSON_data, getApplicationContext(), true);
             } else {
+
+                //Adding dummy data here as well as the api doesn't always connect.
+                processJSONdata(getString(R.string.dummy_data), getApplicationContext(), false);
+                updateScoreWidget();
                 //Could not Connect
                 Log.d(LOG_TAG, "Could not connect to server.");
             }
         }
         catch(Exception e)
         {
+            //Adding dummy data here as well as the api doesn't always connect.
             Log.e(LOG_TAG,e.getMessage());
+            processJSONdata(getString(R.string.dummy_data), getApplicationContext(), false);
+            updateScoreWidget();
         }
     }
     private void processJSONdata (String JSONdata,Context mContext, boolean isReal)
@@ -252,6 +260,8 @@ public class myFetchService extends IntentService
             inserted_data = mContext.getContentResolver().bulkInsert(
                     DatabaseContract.BASE_CONTENT_URI,insert_data);
 
+            updateScoreWidget();
+
             //Log.v(LOG_TAG,"Succesfully Inserted : " + String.valueOf(inserted_data));
         }
         catch (JSONException e)
@@ -259,6 +269,13 @@ public class myFetchService extends IntentService
             Log.e(LOG_TAG,e.getMessage());
         }
 
+    }
+
+    private void updateScoreWidget() {
+
+        Intent dataUpdatedIntent = new Intent(ACTION_DATA_UPDATED);
+        dataUpdatedIntent.setPackage(getPackageName());
+        sendBroadcast(dataUpdatedIntent);
     }
 }
 
