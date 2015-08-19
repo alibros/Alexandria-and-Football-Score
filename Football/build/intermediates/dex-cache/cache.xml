@@ -6,28 +6,28 @@
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-2ac3d803eae57a761f1077cd4ef186cee6fb57bc.jar" />
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Football/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-2ac3d803eae57a761f1077cd4ef186cee6fb57bc.jar" />
     </item>
     <item
-        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-9a2b85f77559755f7d2d3267f12df706103afcbe.jar" />
-    </item>
-    <item
-        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/app/build/intermediates/pre-dexed/debug/classes-ca1439b977eb3b6b3413449189bb0015a1e41770.jar" />
-    </item>
-    <item
-        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/Football/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/app/build/intermediates/pre-dexed/debug/classes-fee1305d7b6334d7df4fab93d77856b7c8d58fba.jar" />
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Football/app/build/intermediates/pre-dexed/debug/classes-78445a21f92eeebfe9930285d63eef0901e51c77.jar" />
+    </item>
+    <item
+        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/Football/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Football/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-fab07c0af76f8671387dcabc49cb74ddd146ca1e.jar" />
+    </item>
+    <item
+        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/Football/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Football/app/build/intermediates/pre-dexed/debug/classes-bc8ef24f6b3dd2f2686321fdf453ca3549e89fbb.jar" />
     </item>
 
 </items>

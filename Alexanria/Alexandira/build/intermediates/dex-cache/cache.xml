@@ -2,60 +2,60 @@
 <items version="2" >
 
     <item
+        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/jacoco/jacocoagent.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="05d4f9e6f36f58a60dc65a4b1af30ee76201a530">
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/pre-dexed/debug/jacocoagent-9ef515d8afe3ce06201d0eda586e12c29fb2194b.jar" />
+    </item>
+    <item
+        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-80fcfe2330c5e9507f6d2dd699870cd4fb68df71.jar" />
+    </item>
+    <item
+        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/pre-dexed/debug/classes-75adbbbe31a4c06977ea2c1c35ba5b791aec423b.jar" />
+    </item>
+    <item
         jar="/Applications/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-2ac3d803eae57a761f1077cd4ef186cee6fb57bc.jar" />
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-2ac3d803eae57a761f1077cd4ef186cee6fb57bc.jar" />
     </item>
     <item
-        jar="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.7.2/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ccebde0751b6bb647deceb712da1190ccacf16c9">
-        <dex dex="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/pre-dexed/debug/classes-57844947fe39ec5802594aa932ae5d4c5037480e.jar" />
-    </item>
-    <item
-        jar="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-aa15dc181e195639b4e7912ca6efbfa2cdd43de7.jar" />
-    </item>
-    <item
-        jar="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/jacoco/jacocoagent.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="05d4f9e6f36f58a60dc65a4b1af30ee76201a530">
-        <dex dex="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/pre-dexed/debug/jacocoagent-bab137fd49995151b915210f7e5720939c92f106.jar" />
-    </item>
-    <item
-        jar="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/pre-dexed/debug/classes-8f258c1cf7009fcd95df5d484f10116e7cce525f.jar" />
-    </item>
-    <item
-        jar="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/zxing/1.7.2/classes.jar"
+        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/zxing/1.7.2/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="e82f095c7851caca39f7c23942ed2b318d843476">
-        <dex dex="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/pre-dexed/debug/classes-cb1126ff87691d2194af76d69dcd6795cc4fa1ef.jar" />
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/pre-dexed/debug/classes-4288490ef95146fb7a7423f1b3b36ebee0d39976.jar" />
+    </item>
+    <item
+        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/pre-dexed/debug/classes-089a4ccb98a0a04ff5f9e1f262333996a94319ee.jar" />
+    </item>
+    <item
+        jar="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.7.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ccebde0751b6bb647deceb712da1190ccacf16c9">
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/pre-dexed/debug/classes-70ebf5cac0ee55d367ae3d62ee813d99111c1ba7.jar" />
     </item>
     <item
         jar="/Users/Ali/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.0/e019d15a13a9786f881141d2df6654b8510bce8b/core-3.2.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
-        <dex dex="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/pre-dexed/debug/core-3.2.0-3b70eb24b0ef4f32853fb1ca77836019425dbfbb.jar" />
-    </item>
-    <item
-        jar="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/Ali/Documents/Udacity/alexandria/app/build/intermediates/pre-dexed/debug/classes-81bb3c1fe0c38623f9a1ab7a3976c21bac623e1a.jar" />
+        <dex dex="/Users/Ali/Documents/Udacity/Football_Scores-master/Alexanria/Alexandira/app/build/intermediates/pre-dexed/debug/core-3.2.0-3b70eb24b0ef4f32853fb1ca77836019425dbfbb.jar" />
     </item>
 
 </items>
